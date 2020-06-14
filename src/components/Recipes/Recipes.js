@@ -3,16 +3,6 @@ import styles from "./Recipes.module.scss";
 import Card from "../Cards/Card";
 import { Context } from "../../context/context";
 
-// const cards = [
-//   { id: Math.random().toString() },
-//   { id: Math.random().toString() },
-//   { id: Math.random().toString() },
-//   { id: Math.random().toString() },
-//   { id: Math.random().toString() },
-//   { id: Math.random().toString() },
-//   { id: Math.random().toString() },
-// ];
-
 const Recipes = () => {
   const { data } = useContext(Context);
 

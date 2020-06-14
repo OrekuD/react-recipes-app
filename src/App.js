@@ -10,17 +10,16 @@ const APP_ID = "fae93ab3";
 const API_KEY = "21c5352a64325d1364a19a9bfd149102";
 
 function App() {
-  const { setData } = useContext(Context);
+  const { setData, search } = useContext(Context);
   useEffect(() => {
     fetch(
-      `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${API_KEY}`
+      `https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=20`
     )
       .then((res) => res.json())
       .then((data) => {
         setData(data.hits);
-        console.log(data.hits);
       });
-  }, [setData]);
+  }, [setData, search]);
 
   return (
     <>
