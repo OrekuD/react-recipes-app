@@ -1,4 +1,3 @@
-export { default as Banner } from "./Banner/Banner";
 export { default as Card } from "./Cards/Card";
 export { default as Header } from "./Header/Header";
 export { default as Searchbar } from "./Searchbar/Searchbar";

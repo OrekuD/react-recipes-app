@@ -9,16 +9,20 @@ const Searchbar = () => {
 
   const searchRecipe = () => {
     setSearch(text);
+    setText("");
   };
 
   return (
     <div className={styles.container}>
-      <Search color="#8b8585" size="15px" />
-      <input
-        placeholder="Search for recipes..."
-        onChange={(e) => setText(e.target.value)}
-        onKeyPress={(e) => (e.key === "Enter" ? searchRecipe() : null)}
-      />
+      <div>
+        <Search color="#8b8585" size="15px" />
+        <input
+          placeholder="Search for recipes..."
+          onChange={(e) => setText(e.target.value)}
+          onKeyPress={(e) => (e.key === "Enter" ? searchRecipe() : null)}
+        />
+      </div>
+      <button onClick={searchRecipe}> Search </button>
     </div>
   );
 };
