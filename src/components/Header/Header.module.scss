@@ -1,0 +1,13 @@
+.container {
+  height: 80px;
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+  justify-content: space-between;
+
+  h5 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+}
