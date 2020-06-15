@@ -1,8 +1,16 @@
 .container {
-  width: 31%;
+  flex-basis: 31%;
   min-height: 260px;
   margin-bottom: 30px;
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    flex-basis: 40%;
+  }
+
+  @media (max-width: 400px) {
+    flex-basis: 80%;
+  }
 }
 
 .image {
